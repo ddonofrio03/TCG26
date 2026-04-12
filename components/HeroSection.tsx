@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { imgPath } from "@/lib/image-path"
 
 export default function HeroSection() {
@@ -116,18 +117,16 @@ export default function HeroSection() {
                 { label: 'Contact', id: 'contact' },
               ].map((item, index) => (
                 item.href ? (
-                  <motion.a
+                  <Link
                     key={item.label}
                     href={item.href}
                     className="text-slate-300 hover:text-white transition-colors duration-300 font-medium text-lg relative group"
-                    whileHover={{ y: -2 }}
-                    transition={{ duration: 0.2 }}
                   >
                     {item.label}
                     <motion.div
                       className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
                     />
-                  </motion.a>
+                  </Link>
                 ) : (
                   <motion.button
                     key={item.id}
@@ -144,16 +143,12 @@ export default function HeroSection() {
                 )
               ))}
               {/* "In Action" page button */}
-              <motion.a
+              <Link
                 href="/in-action"
                 className="ml-6 px-5 py-2 rounded-full font-bold text-white bg-primary shadow-lg shadow-primary/30 border-2 border-primary hover:bg-white hover:text-primary hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                whileHover={{ scale: 1.08, boxShadow: "0 0 0 4px #f43f5e44" }}
-                whileTap={{ scale: 0.97 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                tabIndex={0}
               >
                 In Action →
-              </motion.a>
+              </Link>
             </motion.div>
 
             {/* Mobile Menu Button */}
@@ -229,13 +224,13 @@ export default function HeroSection() {
                   transition={{ duration: 0.3, delay: isMobileMenuOpen ? (index + 1) * 0.1 : 0 }}
                 >
                   {item.href ? (
-                    <a
+                    <Link
                       href={item.href}
                       className="text-white text-3xl font-medium hover:text-primary transition-colors duration-300 block text-center"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ) : (
                     <button
                       onClick={() => scrollToSection(item.id!)}
@@ -257,13 +252,13 @@ export default function HeroSection() {
                 transition={{ duration: 0.3, delay: isMobileMenuOpen ? 0.5 : 0 }}
                 className="pt-8"
               >
-                <a
+                <Link
                   href="/in-action"
                   className="px-8 py-4 rounded-full font-bold text-white bg-primary shadow-lg shadow-primary/30 border-2 border-primary hover:bg-white hover:text-primary transition-all duration-200 text-xl"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   In Action →
-                </a>
+                </Link>
               </motion.div>
             </motion.div>
           </motion.div>
