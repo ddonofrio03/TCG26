@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { HiSpeakerWave, HiBuildingLibrary, HiUserGroup } from "react-icons/hi2"
 import Link from "next/link"
 import Image from "next/image"
+import { imgPath } from "@/lib/image-path"
 
 const services = [
   {
@@ -147,7 +148,7 @@ export default function ExpertiseSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400 to-slate-600 dark:from-slate-700 dark:to-slate-900" />
               <div className="absolute inset-0">
                 <Image
-                  src="/images/council.jpg"
+                  src={imgPath("/images/council.jpg")}
                   alt="City Council"
                   fill
                   className="object-cover"
@@ -191,7 +192,7 @@ export default function ExpertiseSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-slate-500 to-slate-700 dark:from-slate-600 dark:to-slate-800" />
                 <div className="absolute inset-0">
                   <Image
-                    src="/images/recentcommunity.jpg"
+                    src={imgPath("/images/recentcommunity.jpg")}
                     alt="TCG"
                     fill
                     className="object-cover"
@@ -214,7 +215,7 @@ export default function ExpertiseSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400 to-slate-600 dark:from-slate-700 dark:to-slate-900" />
               <div className="absolute inset-0">
                 <Image
-                  src="/images/comms.jpeg"
+                  src={imgPath("/images/comms.jpeg")}
                   alt="TCG"
                   fill
                   className="object-cover"

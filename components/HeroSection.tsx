@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import { imgPath } from "@/lib/image-path"
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
@@ -97,7 +98,7 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-                <Image src="/logos/TCG-white.png" alt="TCG" width={100} height={100} />
+                <Image src={imgPath("/logos/TCG-white.png")} alt="TCG" width={100} height={100} />
                 
             </motion.div>
 

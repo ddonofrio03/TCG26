@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
+import { imgPath } from "@/lib/image-path"
 
 const clients = [
   {
@@ -122,7 +123,7 @@ export default function ClientsSection() {
                     {client.logo && (
                       <div>
                         <Image
-                          src={client.logo}
+                          src={imgPath(client.logo)}
                           alt={client.logoAlt}
                           width={120}
                           height={120}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
+import { imgPath } from "@/lib/image-path"
 
 const caseStudies = [
   {
@@ -185,7 +186,7 @@ export default function CaseStudies() {
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-white text-center p-8">
                           <Image
-                            src={study.image}
+                            src={imgPath(study.image)}
                             alt={study.title}
                             fill
                             className="object-cover w-full h-full"
