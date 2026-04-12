@@ -66,14 +66,14 @@ export default function ClientsSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="text-center mb-16 lg:mb-24"
         >
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-4xl lg:text-5xl xl:text-6xl font-black text-slate-900 dark:text-white mb-6"
           >
             TCG Clients
@@ -83,7 +83,7 @@ export default function ClientsSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-xl lg:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto"
           >
             Guiding our clients on the road to success
@@ -95,7 +95,7 @@ export default function ClientsSection() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="max-w-6xl mx-auto mb-20"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 lg:gap-y-12">
@@ -105,7 +105,7 @@ export default function ClientsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0 }}
                 className="group border-b border-slate-200 dark:border-slate-800 pb-6 lg:pb-8"
               >
                 <div className="flex items-start gap-4">
@@ -118,7 +118,7 @@ export default function ClientsSection() {
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
-                      viewport={{ once: true }}
+                      viewport={{ once: true, amount: 0 }}
                     />
                     {client.logo && (
                       <div>
@@ -151,7 +151,7 @@ export default function ClientsSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-20 lg:mb-32"
         >
           <div className="text-center">
@@ -173,7 +173,7 @@ export default function ClientsSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="text-center mb-20 lg:mb-32"
         >
           <Link href="/clients">
@@ -195,7 +195,7 @@ export default function ClientsSection() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="text-center max-w-4xl mx-auto"
         >
           <div className="text-6xl lg:text-8xl text-slate-200 dark:text-slate-800 font-black mb-6">"</div>

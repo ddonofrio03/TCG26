@@ -29,7 +29,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-center mb-8"
           >
             <motion.h2
@@ -37,7 +37,7 @@ export default function ContactSection() {
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
             >
               Get Connected with TCG
             </motion.h2>
@@ -47,7 +47,7 @@ export default function ContactSection() {
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
             >
               Ready to define your narrative? Let's discuss how we can help you achieve your strategic communications goals.
             </motion.p>
@@ -58,7 +58,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="grid md:grid-cols-3 gap-8 mb-8"
           >
             {/* Email */}
@@ -66,7 +66,7 @@ export default function ContactSection() {
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="text-center"
             >
               <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-2">Email</h3>
@@ -83,7 +83,7 @@ export default function ContactSection() {
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="text-center"
             >
               <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-2">Call or Text</h3>
@@ -100,7 +100,7 @@ export default function ContactSection() {
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="text-center"
             >
               <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-2">Office</h3>
@@ -115,7 +115,7 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-center"
           >
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">

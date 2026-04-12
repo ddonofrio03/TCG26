@@ -92,7 +92,7 @@ export default function CaseStudies() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-center mb-16 lg:mb-24"
           >
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-6">
@@ -111,7 +111,7 @@ export default function CaseStudies() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0 }}
                 className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-start ${
                   index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                 }`}
@@ -166,7 +166,7 @@ export default function CaseStudies() {
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.4, delay: (index * 0.1) + (i * 0.1) }}
-                          viewport={{ once: true }}
+                          viewport={{ once: true, amount: 0 }}
                           className="flex items-start space-x-3"
                         >
                           <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
@@ -207,7 +207,7 @@ export default function CaseStudies() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-center mt-20 lg:mt-32"
           >
             <Card className="bg-primary/5 border-primary/20 backdrop-blur-sm max-w-3xl mx-auto">

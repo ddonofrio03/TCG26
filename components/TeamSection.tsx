@@ -57,7 +57,7 @@ export default function TeamSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-center mb-16 lg:mb-24"
           >
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-6">
@@ -77,7 +77,7 @@ export default function TeamSection() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0 }}
               >
                 <Card className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                   <CardContent className="p-8">
@@ -118,7 +118,7 @@ export default function TeamSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="text-center mt-20 lg:mt-32"
           >
             <Card className="bg-primary/5 border-primary/20 backdrop-blur-sm max-w-4xl mx-auto">

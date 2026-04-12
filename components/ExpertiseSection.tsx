@@ -51,14 +51,14 @@ export default function ExpertiseSection() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="space-y-8"
           >
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="text-4xl lg:text-5xl xl:text-6xl font-black text-slate-900 dark:text-white leading-tight"
             >
               Small firm.
@@ -72,7 +72,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="space-y-6 text-lg lg:text-xl text-slate-700 dark:text-slate-300 leading-relaxed"
             >
               <p>
@@ -94,7 +94,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="grid grid-cols-2 gap-8 pt-6"
             >
               <div>
@@ -111,7 +111,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="pt-4"
             >
 
@@ -134,7 +134,7 @@ export default function ExpertiseSection() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             className="grid grid-cols-2 gap-4 lg:gap-6"
           >
             {/* Top Left */}
@@ -142,7 +142,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400 to-slate-600 dark:from-slate-700 dark:to-slate-900" />
@@ -165,7 +165,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="aspect-square bg-primary/20 rounded-lg overflow-hidden relative"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/60 to-primary" />
@@ -186,7 +186,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-500 to-slate-700 dark:from-slate-600 dark:to-slate-800" />
@@ -209,7 +209,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400 to-slate-600 dark:from-slate-700 dark:to-slate-900" />
@@ -235,7 +235,7 @@ export default function ExpertiseSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="grid md:grid-cols-3 gap-8 lg:gap-12 mt-24 lg:mt-32 mb-24 lg:mb-40"
         >
           {services.map((service, index) => (
@@ -244,7 +244,7 @@ export default function ExpertiseSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.15, ease: "easeOut" }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               className="relative group cursor-pointer bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300"
             >
               <div className="p-8 lg:p-10 xl:p-12 h-full min-h-[360px] lg:min-h-[400px] flex flex-col justify-between relative overflow-hidden">
@@ -270,7 +270,7 @@ export default function ExpertiseSection() {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: (index * 0.15) + (i * 0.1) + 0.3 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0 }}
                         className="relative"
                       >
                         <div className="flex items-start space-x-4">
@@ -296,7 +296,7 @@ export default function ExpertiseSection() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0 }}
           className="mt-20 lg:mt-32 text-center max-w-4xl mx-auto"
         >
           <div className="text-6xl lg:text-8xl text-slate-200 dark:text-slate-800 font-black mb-6">"</div>
