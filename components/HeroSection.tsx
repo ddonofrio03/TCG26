@@ -12,17 +12,15 @@ const NAV_ITEMS = [
   { label: "Contact", id: "contact" },
 ]
 
-// Fast-cut clips: press conferences, podiums, community meetings, public advocacy, crowd shots
+
+// Local video clips served from public/videos/
 const VIDEOS = [
-  "https://videos.pexels.com/video-files/6951811/6951811-sd_640_360_25fps.mp4",
-  "https://videos.pexels.com/video-files/6952251/6952251-sd_640_360_25fps.mp4",
-  "https://videos.pexels.com/video-files/7103562/7103562-sd_640_360_25fps.mp4",
-  "https://videos.pexels.com/video-files/6951717/6951717-sd_640_360_25fps.mp4",
-  "https://videos.pexels.com/video-files/32999523/14064277_640_360_30fps.mp4",
-  "https://videos.pexels.com/video-files/6952134/6952134-sd_640_360_25fps.mp4",
-  "https://videos.pexels.com/video-files/4474258/4474258-sd_640_360_30fps.mp4",
-  "https://videos.pexels.com/video-files/6951740/6951740-sd_640_360_25fps.mp4",
+  imgPath("/videos/hero1.mp4"),
+  imgPath("/videos/hero2.mp4"),
+  imgPath("/videos/hero3.mp4"),
+  imgPath("/videos/hero4.mp4"),
 ]
+
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
