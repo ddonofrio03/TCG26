@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
@@ -88,11 +87,7 @@ export default function CaseStudies() {
         <div className="max-w-7xl mx-auto">
           
           {/* Section intro */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0 }}
+          <div
             className="text-center mb-16 lg:mb-24"
           >
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-6">
@@ -101,17 +96,13 @@ export default function CaseStudies() {
             <p className="text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
               From Fortune 100 companies to grassroots campaigns, we deliver results that matter.
             </p>
-          </motion.div>
+          </div>
 
           {/* Case Studies Grid */}
           <div className="space-y-20 lg:space-y-32">
             {caseStudies.map((study, index) => (
-              <motion.div
+              <div
                 key={study.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0 }}
                 className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-start ${
                   index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                 }`}
@@ -161,19 +152,15 @@ export default function CaseStudies() {
                     </h4>
                     <ul className="space-y-3">
                       {study.results.map((result, i) => (
-                        <motion.li
+                        <li
                           key={i}
-                          initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.4, delay: (index * 0.1) + (i * 0.1) }}
-                          viewport={{ once: true, amount: 0 }}
                           className="flex items-start space-x-3"
                         >
                           <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                           <span className="text-slate-700 dark:text-slate-300 leading-relaxed">
                             {result}
                           </span>
-                        </motion.li>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -198,16 +185,12 @@ export default function CaseStudies() {
                     </CardContent>
                   </Card>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Call to Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0 }}
+          <div
             className="text-center mt-20 lg:mt-32"
           >
             <Card className="bg-primary/5 border-primary/20 backdrop-blur-sm max-w-3xl mx-auto">
@@ -227,7 +210,7 @@ export default function CaseStudies() {
                     className="inline-flex items-center space-x-3 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
                   >
                     <span>Start Your Project</span>
-                    <motion.div
+                    <div
                       className="w-4 h-4 border-t-2 border-r-2 border-current rotate-45 group-hover:translate-x-1 transition-transform"
                     />
                   </a>
@@ -242,7 +225,7 @@ export default function CaseStudies() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

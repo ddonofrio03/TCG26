@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 
 const teamMembers = [
@@ -53,11 +52,7 @@ export default function TeamSection() {
         <div className="max-w-7xl mx-auto">
           
           {/* Section intro */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0 }}
+          <div
             className="text-center mb-16 lg:mb-24"
           >
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-6">
@@ -67,17 +62,13 @@ export default function TeamSection() {
               Our diverse team combines decades of experience across communications, advocacy, 
               technology, and community engagement to deliver comprehensive solutions.
             </p>
-          </motion.div>
+          </div>
 
           {/* Team Members Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {teamMembers.map((member, index) => (
-              <motion.div
+              <div
                 key={member.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0 }}
               >
                 <Card className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                   <CardContent className="p-8">
@@ -109,16 +100,12 @@ export default function TeamSection() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Call to Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0 }}
+          <div
             className="text-center mt-20 lg:mt-32"
           >
             <Card className="bg-primary/5 border-primary/20 backdrop-blur-sm max-w-4xl mx-auto">
@@ -138,7 +125,7 @@ export default function TeamSection() {
                     className="inline-flex items-center space-x-3 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
                   >
                     <span>Get Started</span>
-                    <motion.div
+                    <div
                       className="w-4 h-4 border-t-2 border-r-2 border-current rotate-45 group-hover:translate-x-1 transition-transform"
                     />
                   </a>
@@ -153,7 +140,7 @@ export default function TeamSection() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

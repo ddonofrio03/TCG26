@@ -137,17 +137,11 @@ export default function ClientsPage() {
       {/* Header */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 lg:py-32">
         <div className="container mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+          <div
             className="text-center"
           >
             {/* Back Button */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+            <div
               className="mb-8"
             >
               <Link href="/">
@@ -156,27 +150,21 @@ export default function ClientsPage() {
                   Back to Home
                 </Button>
               </Link>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+            <h1
               className="text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6"
             >
               Our Clients
-            </motion.h1>
+            </h1>
             
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+            <p
               className="text-xl lg:text-2xl text-slate-300 max-w-3xl mx-auto"
             >
               Trusted by organizations across sports, real estate, and diverse industries 
               to deliver strategic communications and advocacy solutions.
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -186,10 +174,7 @@ export default function ClientsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
             
             {/* Sports Column */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+            <div
             >
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-black text-slate-900 dark:text-white mb-4">
@@ -200,11 +185,8 @@ export default function ClientsPage() {
               
               <div className="space-y-6">
                 {clientCategories.sports.map((client, index) => (
-                  <motion.div
+                  <div
                     key={client.name}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                   >
                     <Card className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                       <CardContent className="p-6">
@@ -219,16 +201,13 @@ export default function ClientsPage() {
                         </p>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* Real Estate Column */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            <div
             >
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-black text-slate-900 dark:text-white mb-4">
@@ -239,11 +218,8 @@ export default function ClientsPage() {
               
               <div className="space-y-6">
                 {clientCategories.realEstate.map((client, index) => (
-                  <motion.div
+                  <div
                     key={client.name}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                   >
                     <Card className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                       <CardContent className="p-6">
@@ -258,16 +234,13 @@ export default function ClientsPage() {
                         </p>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* miscellaneous Column */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            <div
             >
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-black text-slate-900 dark:text-white mb-4">
@@ -278,11 +251,8 @@ export default function ClientsPage() {
               
               <div className="space-y-6">
                 {clientCategories.miscellaneous.map((client, index) => (
-                  <motion.div
+                  <div
                     key={client.name}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                   >
                     <Card className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                       <CardContent className="p-6">
@@ -297,18 +267,15 @@ export default function ClientsPage() {
                         </p>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
           </div>
 
           {/* Bottom CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+          <div
             className="text-center mt-20 lg:mt-32"
           >
             <Card className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground p-12 lg:p-16 max-w-4xl mx-auto">
@@ -330,7 +297,7 @@ export default function ClientsPage() {
                 </Link>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

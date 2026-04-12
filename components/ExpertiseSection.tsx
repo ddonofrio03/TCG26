@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { HiSpeakerWave, HiBuildingLibrary, HiUserGroup } from "react-icons/hi2"
 import Link from "next/link"
@@ -47,18 +46,10 @@ export default function ExpertiseSection() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-start">
           
           {/* Left Column - Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0 }}
+          <div
             className="space-y-8"
           >
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true, amount: 0 }}
+            <h2
               className="text-4xl lg:text-5xl xl:text-6xl font-black text-slate-900 dark:text-white leading-tight"
             >
               Small firm.
@@ -66,13 +57,9 @@ export default function ExpertiseSection() {
               <span className="text-primary">Big impact.</span>
               <br />
               Major clients.
-            </motion.h2>
+            </h2>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="space-y-6 text-lg lg:text-xl text-slate-700 dark:text-slate-300 leading-relaxed"
             >
               <p>
@@ -88,13 +75,9 @@ export default function ExpertiseSection() {
                 that larger firms often silo. <strong>The result? Faster decisions, 
                 deeper relationships, and outcomes that matter.</strong>
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="grid grid-cols-2 gap-8 pt-6"
             >
               <div>
@@ -105,44 +88,30 @@ export default function ExpertiseSection() {
                 <div className="text-3xl lg:text-4xl font-black text-primary mb-2">Fortune 100 &amp; Startups</div>
                 <div className="text-slate-600 dark:text-slate-400 font-medium">Clients Served Nationwide</div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="pt-4"
             >
 
               <Link href="/in-action" className="inline-flex items-center space-x-3 text-primary hover:text-primary/80 transition-colors cursor-pointer group">
                 <span className="text-lg font-semibold">See Our Work</span>
-                <motion.div
+                <div
                   className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.2 }}
                 >
                   <div className="w-3 h-3 border-t-2 border-r-2 border-current rotate-45" />
-                </motion.div>
+                </div>
               </Link>
 
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Right Column - Image Grid */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0 }}
+          <div
             className="grid grid-cols-2 gap-4 lg:gap-6"
           >
             {/* Top Left */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400 to-slate-600 dark:from-slate-700 dark:to-slate-900" />
@@ -158,14 +127,10 @@ export default function ExpertiseSection() {
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-            </motion.div>
+            </div>
 
             {/* Top Right */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="aspect-square bg-primary/20 rounded-lg overflow-hidden relative"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/60 to-primary" />
@@ -179,14 +144,10 @@ export default function ExpertiseSection() {
                 </div>
               </div>
               <div className="absolute inset-0 bg-black/0" />
-            </motion.div>
+            </div>
 
             {/* Bottom Left */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-500 to-slate-700 dark:from-slate-600 dark:to-slate-800" />
@@ -202,14 +163,10 @@ export default function ExpertiseSection() {
                   />
                 </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-            </motion.div>
+            </div>
 
             {/* Bottom Right */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true, amount: 0 }}
+            <div
               className="aspect-square bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden relative group cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400 to-slate-600 dark:from-slate-700 dark:to-slate-900" />
@@ -225,26 +182,18 @@ export default function ExpertiseSection() {
                 />
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
 
         
         {/* Services Grid */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0 }}
+        <div
           className="grid md:grid-cols-3 gap-8 lg:gap-12 mt-24 lg:mt-32 mb-24 lg:mb-40"
         >
           {services.map((service, index) => (
-            <motion.div
+            <div
               key={service.title}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.15, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0 }}
               className="relative group cursor-pointer bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300"
             >
               <div className="p-8 lg:p-10 xl:p-12 h-full min-h-[360px] lg:min-h-[400px] flex flex-col justify-between relative overflow-hidden">
@@ -265,12 +214,8 @@ export default function ExpertiseSection() {
                   {/* Services List */}
                   <div className="space-y-4">
                     {service.services.map((item, i) => (
-                      <motion.div
+                      <div
                         key={i}
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: (index * 0.15) + (i * 0.1) + 0.3 }}
-                        viewport={{ once: true, amount: 0 }}
                         className="relative"
                       >
                         <div className="flex items-start space-x-4">
@@ -279,7 +224,7 @@ export default function ExpertiseSection() {
                             {item}
                           </div>
                         </div>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -287,16 +232,12 @@ export default function ExpertiseSection() {
                 {/* Hover Effect */}
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-xl" />
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
         
         {/* Bottom Quote/Principle */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0 }}
+        <div
           className="mt-20 lg:mt-32 text-center max-w-4xl mx-auto"
         >
           <div className="text-6xl lg:text-8xl text-slate-200 dark:text-slate-800 font-black mb-6">"</div>
@@ -307,7 +248,7 @@ export default function ExpertiseSection() {
             <span className="font-medium text-slate-900 dark:text-white"> large firms simply cannot.</span>
           </blockquote>
           <div className="mt-8 w-24 h-1 bg-primary mx-auto" />
-        </motion.div>
+        </div>
       </div>
     </section>
   )
