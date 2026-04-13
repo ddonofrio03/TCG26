@@ -38,7 +38,7 @@ const services = [
 
 export default function ExpertiseSection() {
   return (
-    <section className="bg-slate-50 dark:bg-slate-950 py-20 lg:py-32">
+    <section className="bg-slate-50 dark:bg-slate-950 py-12 lg:py-16">
       <div className="container mx-auto px-6 lg:px-12">
 
 

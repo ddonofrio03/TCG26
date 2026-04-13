@@ -58,7 +58,7 @@ const clients = [
 
 export default function ClientsSection() {
   return (
-    <section className="bg-white dark:bg-slate-900 py-20 lg:py-32">
+    <section className="bg-white dark:bg-slate-900 py-12 lg:py-16">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
         <div
