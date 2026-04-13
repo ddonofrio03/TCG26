@@ -133,7 +133,7 @@ const clientCategories = {
 
 export default function ClientsPage() {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="bg-slate-50 dark:bg-slate-950">
       {/* Header */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 lg:py-32">
         <div className="container mx-auto px-6 lg:px-12">

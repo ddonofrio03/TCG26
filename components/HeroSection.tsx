@@ -38,7 +38,7 @@ export default function HeroSection() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Fast cuts every 2.5 seconds
+  // Cuts every 4.5 seconds
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setTransitioning(true)
@@ -50,7 +50,7 @@ export default function HeroSection() {
         })
         setTransitioning(false)
       }, 300)
-    }, 2500)
+    }, 4500)
     return () => { if (intervalRef.current) clearInterval(intervalRef.current) }
   }, [])
 
