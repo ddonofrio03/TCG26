@@ -47,7 +47,11 @@ export default function HeroSection() {
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
-    if (element) element.scrollIntoView({ behavior: "smooth", block: "start" })
+    if (element) {
+      const offset = 80 // account for fixed nav
+      const top = element.getBoundingClientRect().top + window.scrollY - offset
+      window.scrollTo({ top, behavior: "smooth" })
+    }
     setIsMobileMenuOpen(false)
   }
 
