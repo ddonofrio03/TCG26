@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { imgPath } from "@/lib/image-path"
@@ -12,46 +12,14 @@ const NAV_ITEMS = [
   { label: "Contact", id: "contact" },
 ]
 
-
-// Local video clips served from public/videos/
-const VIDEOS = [
-  imgPath("/videos/hero1.mp4"),
-  imgPath("/videos/hero2.mp4"),
-  imgPath("/videos/hero3.mp4"),
-  imgPath("/videos/hero4.mp4"),
-]
-
-
 export default function HeroSection() {
-  const [mounted, setMounted] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [currentVideo, setCurrentVideo] = useState(0)
-  const [nextVideo, setNextVideo] = useState(1)
-  const [transitioning, setTransitioning] = useState(false)
-  const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
-    setMounted(true)
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
-  // Cuts every 4.5 seconds
-  useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      setTransitioning(true)
-      setTimeout(() => {
-        setCurrentVideo((prev) => {
-          const next = (prev + 1) % VIDEOS.length
-          setNextVideo((next + 1) % VIDEOS.length)
-          return next
-        })
-        setTransitioning(false)
-      }, 300)
-    }, 4500)
-    return () => { if (intervalRef.current) clearInterval(intervalRef.current) }
   }, [])
 
   useEffect(() => {
@@ -86,28 +54,21 @@ export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen w-full relative overflow-hidden bg-slate-900">
 
-      {/* VIDEO BACKGROUND - fast cuts, color comes through */}
+      {/* VIDEO BACKGROUND */}
       <div className="absolute inset-0 z-0">
-        {VIDEOS.map((src, i) => (
-          <video
-            key={src}
-            src={src}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{
-              opacity: i === currentVideo ? (transitioning ? 0 : 1) : 0,
-              transition: "opacity 0.1s ease-in-out",
-            }}
-          />
-        ))}
-        {/* Light overlay - let color bleed through */}
-        <div className="absolute inset-0 bg-black/45" />
-        {/* Subtle vignette at edges */}
+        <video
+          src={imgPath("/videos/hero.mp4")}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Dark overlay so text stays readable */}
+        <div className="absolute inset-0 bg-black/50" />
+        {/* Vignette at edges */}
         <div className="absolute inset-0" style={{
-          background: "radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.5) 100%)"
+          background: "radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.55) 100%)"
         }} />
       </div>
 
