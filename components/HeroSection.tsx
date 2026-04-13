@@ -209,17 +209,12 @@ export default function HeroSection() {
             Define yourself, before others do it for you.
           </p>
 
-          <button
-            onClick={() => scrollToSection("expertise")}
-            className="inline-flex items-center space-x-3 text-white hover:text-primary transition-colors group"
-          >
-            <span className="text-lg font-semibold tracking-wide uppercase">Learn More</span>
-            <span className="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center group-hover:scale-110 transition-transform">
-              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </button>
+          <div className="flex items-center space-x-3 text-white/60">
+            <span className="text-sm font-semibold tracking-widest uppercase">Keep Scrolling to Learn More</span>
+            <svg className="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
         </div>
       </div>
 
