@@ -99,7 +99,7 @@ export default function HeroSection() {
             className="absolute inset-0 w-full h-full object-cover"
             style={{
               opacity: i === currentVideo ? (transitioning ? 0 : 1) : 0,
-              transition: "opacity 0.3s ease-in-out",
+              transition: "opacity 0.1s ease-in-out",
             }}
           />
         ))}
