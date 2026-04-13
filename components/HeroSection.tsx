@@ -36,12 +36,12 @@ export default function HeroSection() {
       document.addEventListener("click", handleClickOutside)
       document.body.style.overflow = "hidden"
     } else {
-      document.body.style.overflow = "unset"
+      document.body.style.overflow = ""
     }
     return () => {
       document.removeEventListener("keydown", handleEscape)
       document.removeEventListener("click", handleClickOutside)
-      document.body.style.overflow = "unset"
+      document.body.style.overflow = ""
     }
   }, [isMobileMenuOpen])
 
