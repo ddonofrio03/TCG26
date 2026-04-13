@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Navbar from "@/components/Navbar";
 import InActionHero from "@/components/InActionHero";
 import CaseStudies from "@/components/CaseStudies";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function InActionPage() {
   return (
     <div className="min-h-screen">
+      <Navbar />
       <InActionHero />
       <CaseStudies />
     </div>

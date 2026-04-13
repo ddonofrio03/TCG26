@@ -1,11 +1,10 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Navbar from "@/components/Navbar"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 
 const clientCategories = {
   sports: [
@@ -134,34 +133,16 @@ const clientCategories = {
 export default function ClientsPage() {
   return (
     <div className="bg-slate-50 dark:bg-slate-950">
+      <Navbar />
       {/* Header */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 lg:py-32">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="container mx-auto px-6 lg:px-12">
-          <div
-            className="text-center"
-          >
-            {/* Back Button */}
-            <div
-              className="mb-8"
-            >
-              <Link href="/">
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Home
-                </Button>
-              </Link>
-            </div>
-
-            <h1
-              className="text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6"
-            >
+          <div className="text-center">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6">
               Our Clients
             </h1>
-            
-            <p
-              className="text-xl lg:text-2xl text-slate-300 max-w-3xl mx-auto"
-            >
-              Trusted by organizations across sports, real estate, and diverse industries 
+            <p className="text-xl lg:text-2xl text-slate-300 max-w-3xl mx-auto">
+              Trusted by organizations across sports, real estate, and diverse industries
               to deliver strategic communications and advocacy solutions.
             </p>
           </div>
