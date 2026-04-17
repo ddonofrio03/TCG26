@@ -20,7 +20,7 @@ const structuredData = {
   "@type": "ProfessionalService",
   "name": "TCG Strategic Communications",
   "description": "Leading public relations and strategic communications firm serving Washington DC and Northern Virginia",
-  "url": process.env.NEXT_PUBLIC_SITE_URL || "https://tcg-strategic.com",
+  "url": process.env.NEXT_PUBLIC_SITE_URL || "https://www.thecaseygroup.us",
   "telephone": "+1-703-981-6034", // Update with actual phone number
   "email": "ddonofrio@thecaseygroup.us", 
   "address": {
