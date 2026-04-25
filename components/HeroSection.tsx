@@ -145,44 +145,46 @@ export default function HeroSection() {
               </div>
             </button>
           </div>
-
-          {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-            <div
-              className="fixed inset-0 z-40 md:hidden bg-black/90 backdrop-blur-md flex flex-col justify-center items-center space-y-8"
-              data-mobile-menu
-            >
-              {NAV_ITEMS.map((item) =>
-                item.href ? (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="text-white text-3xl font-medium hover:text-primary transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id!)}
-                    className="text-white text-3xl font-medium hover:text-primary transition-colors"
-                  >
-                    {item.label}
-                  </button>
-                )
-              )}
-              <Link
-                href="/in-action"
-                className="px-8 py-4 rounded-full font-bold text-white bg-primary border-2 border-primary hover:bg-white hover:text-primary transition-all text-xl"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                In Action →
-              </Link>
-            </div>
-          )}
         </nav>
       </header>
+
+      {/* Mobile Menu — rendered outside <header> so the header's
+          backdrop-filter (when scrolled) does not become the containing
+          block for this fixed element and clip it. */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 z-40 md:hidden bg-black/90 backdrop-blur-md flex flex-col justify-center items-center space-y-8"
+          data-mobile-menu
+        >
+          {NAV_ITEMS.map((item) =>
+            item.href ? (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="text-white text-3xl font-medium hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id!)}
+                className="text-white text-3xl font-medium hover:text-primary transition-colors"
+              >
+                {item.label}
+              </button>
+            )
+          )}
+          <Link
+            href="/in-action"
+            className="px-8 py-4 rounded-full font-bold text-white bg-primary border-2 border-primary hover:bg-white hover:text-primary transition-all text-xl"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            In Action →
+          </Link>
+        </div>
+      )}
 
       {/* HERO CONTENT */}
       <div className="relative z-10 container mx-auto px-6 lg:px-12 min-h-screen flex flex-col justify-end pb-28 pt-32">
