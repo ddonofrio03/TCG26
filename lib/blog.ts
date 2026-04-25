@@ -2,7 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
-import html from "remark-html";
+import remarkRehype from "remark-rehype";
+import rehypeSanitize from "rehype-sanitize";
+import rehypeStringify from "rehype-stringify";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
@@ -57,7 +59,13 @@ export async function getPost(slug: string): Promise<Post | null> {
   if (!fs.existsSync(filePath)) return null;
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
-  const processed = await remark().use(html).process(content);
+  // remark → rehype → sanitize → stringify
+  // rehype-sanitize strips <script>, on*= handlers, and other XSS vectors.
+  const processed = await remark()
+    .use(remarkRehype)
+    .use(rehypeSanitize)
+    .use(rehypeStringify)
+    .process(content);
   return {
     slug,
     title: data.title ?? slug,
