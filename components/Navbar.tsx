@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: "Expertise", href: "/#expertise" },
   { label: "Our Team", href: "/our-team" },
   { label: "Clients", href: "/#clients" },
-  { label: "Blog", href: "/blog" },
+  { label: "TCG Insights", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ]
 
