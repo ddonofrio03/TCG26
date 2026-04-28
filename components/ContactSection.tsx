@@ -65,7 +65,7 @@ export default function ContactSection() {
             <div
               className="text-center"
             >
-              <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-2">Office</h3>
+              <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-2">Offices</h3>
               <address className="text-base lg:text-lg font-semibold text-white not-italic leading-relaxed">
                 Leesburg, VA & Murrells Inlet, SC
               </address>
