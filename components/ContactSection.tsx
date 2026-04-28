@@ -61,13 +61,13 @@ export default function ContactSection() {
               </a>
             </div>
 
-            {/* Office */}
+            {/* Offices */}
             <div
               className="text-center"
             >
               <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-2">Office</h3>
               <address className="text-base lg:text-lg font-semibold text-white not-italic leading-relaxed">
-                Leesburg, VA
+                Leesburg, VA & Murrells Inlet, SC
               </address>
             </div>
           </div>
