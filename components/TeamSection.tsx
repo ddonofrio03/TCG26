@@ -136,15 +136,7 @@ export default function TeamSection() {
                       </p>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
-                      <a
-                        href="/#contact"
-                        className="inline-flex items-center space-x-3 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
-                      >
-                        <span>Get Started</span>
-                        <div className="w-4 h-4 border-t-2 border-r-2 border-current rotate-45 group-hover:translate-x-1 transition-transform" />
-                      </a>
-
+                    <div className="flex justify-center pt-2">
                       <a
                         href="mailto:ddonofrio@thecaseygroup.us"
                         className="inline-flex items-center space-x-3 text-primary hover:text-primary/80 transition-colors cursor-pointer group"
