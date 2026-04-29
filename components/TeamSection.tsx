@@ -61,7 +61,7 @@ const teamMembers = [
                     href="mailto:ddonofrio@thecaseygroup.us"
                     className="inline-flex items-center space-x-3 text-primary hover:text-primary/80 transition-colors cursor-pointer group"
                   >
-                    <span className="font-semibold">Contact David</span>
+                    <span className="font-semibold">Contact Dave</span>
                     <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform" />
                   </a>"
   }
