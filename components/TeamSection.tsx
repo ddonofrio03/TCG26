@@ -50,20 +50,6 @@ const teamMembers = [
     location: "Sacramento, California",
     bio: "AI Engineer with Masters in Dynamical Neuroscience from UC Santa Barbara. Founded multiple tech companies including FurnishEureka.com, Research Radar, and Magic Mirror. Bridges the gap between emerging technology and practical communications applications.",
     highlight: "Brings cutting-edge AI and data center expertise to modern advocacy challenges."
-  },
-   {
-    id: "ready",
-    name: "Ready to work with our team?",
-    // title: "Join Us!",
-    location: "TBD",
-    bio: "Our diverse expertise means we can tackle any communications challenge. Let's discuss how our team can help you achieve your strategic goals.",
-    highlight: " <a
-                    href="mailto:ddonofrio@thecaseygroup.us"
-                    className="inline-flex items-center space-x-3 text-primary hover:text-primary/80 transition-colors cursor-pointer group"
-                  >
-                    <span className="font-semibold">Contact Dave</span>
-                    <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform" />
-                  </a>"
   }
 ]
 
@@ -130,16 +116,24 @@ export default function TeamSection() {
           <div
             className="text-center mt-20 lg:mt-32"
           >
-            <Card className="bg-primary/5 border-primary/20 backdrop-blur-sm max-w-4xl mx-auto">
+            <Card className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 max-w-4xl mx-auto">
               <CardContent className="p-8 lg:p-12">
-                <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white leading-tight mb-4">
-                  Ready to work with our team?
-                </h3>
-                
-                <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
-                  Our diverse expertise means we can tackle any communications challenge. 
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl lg:text-3xl font-black text-slate-900 dark:text-white mb-2">
+                    Ready to work with our team?
+                  </h3>
+                </div>
+
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-center mb-6">
+                  Our diverse expertise means we can tackle any communications challenge.
                   Let's discuss how our team can help you achieve your strategic goals.
                 </p>
+
+                <div className="border-l-4 border-primary pl-6 bg-primary/5 dark:bg-primary/10 p-4 rounded-r-lg mb-8">
+                  <p className="text-sm font-medium text-slate-800 dark:text-slate-200 italic">
+                    Let's build something great together.
+                  </p>
+                </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a
