@@ -50,6 +50,20 @@ const teamMembers = [
     location: "Conway, South Carolina",
     bio: "Emerging project manager with a background in communications and performance, bringing energy and discipline to every engagement. Based in South Carolina, TJ serves as boots on the ground, supporting client strategy, stakeholder outreach, and day-to-day project execution.",
     highlight: "Delivers reliable, on-the-ground support to keep projects moving and teams aligned."
+  },
+   {
+    id: "ready",
+    name: "Ready to work with our team?",
+    // title: "Join Us!",
+    location: "TBD",
+    bio: "Our diverse expertise means we can tackle any communications challenge. Let's discuss how our team can help you achieve your strategic goals.",
+    highlight: " <a
+                    href="mailto:ddonofrio@thecaseygroup.us"
+                    className="inline-flex items-center space-x-3 text-primary hover:text-primary/80 transition-colors cursor-pointer group"
+                  >
+                    <span className="font-semibold">Contact David</span>
+                    <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform" />
+                  </a>"
   }
 ]
 
