@@ -42,6 +42,14 @@ const teamMembers = [
     location: "Sacramento, California",
     bio: "AI Engineer with Masters in Dynamical Neuroscience from UC Santa Barbara. Founded multiple tech companies including FurnishEureka.com, Research Radar, and Magic Mirror. Bridges the gap between emerging technology and practical communications applications.",
     highlight: "Brings cutting-edge AI and data center expertise to modern advocacy challenges."
+  },
+   {
+    id: "tj-donofrio",
+    name: "TJ D'Onofrio",
+    // title: "Project Manager",
+    location: "Conway, South Carolina",
+    bio: "Emerging project manager with a background in communications and performance, bringing energy and discipline to every engagement. Based in South Carolina, TJ serves as boots on the ground, supporting client strategy, stakeholder outreach, and day-to-day project execution.",
+    highlight: "Delivers reliable, on-the-ground support to keep projects moving and teams aligned."
   }
 ]
 
