@@ -16,7 +16,7 @@ export interface PostMeta {
   category: string;
   author?: string;
   image?: string;
-  imagePosition?: "top" | "center" | "bottom";
+  imagePosition?: string;
 }
 
 export interface Post extends PostMeta {
