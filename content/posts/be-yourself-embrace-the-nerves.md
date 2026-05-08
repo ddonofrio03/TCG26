@@ -5,6 +5,7 @@ excerpt: "The 'secret' to public speaking isn't getting rid of the nerves — it
 category: "Public Speaking"
 author: "The Casey Group"
 image: "/images/public-speaking.jpeg"
+imagePosition: "top"
 ---
 
 I have been blessed at being a solid public speaker, and plenty of people ask me what the "secrets" are.
