@@ -50,7 +50,13 @@ export default function BlogPage() {
                           src={post.image}
                           alt={post.title}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          className={`object-cover group-hover:scale-105 transition-transform duration-500 ${
+                            post.imagePosition === "top"
+                              ? "object-top"
+                              : post.imagePosition === "bottom"
+                              ? "object-bottom"
+                              : "object-center"
+                          }`}
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       </div>

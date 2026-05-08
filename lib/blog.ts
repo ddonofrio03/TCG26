@@ -16,6 +16,7 @@ export interface PostMeta {
   category: string;
   author?: string;
   image?: string;
+  imagePosition?: "top" | "center" | "bottom";
 }
 
 export interface Post extends PostMeta {
@@ -51,6 +52,7 @@ export function getPostMeta(slug: string): PostMeta | null {
     category: data.category ?? "General",
     author: data.author,
     image: data.image,
+    imagePosition: data.imagePosition,
   };
 }
 
@@ -74,6 +76,7 @@ export async function getPost(slug: string): Promise<Post | null> {
     category: data.category ?? "General",
     author: data.author,
     image: data.image,
+    imagePosition: data.imagePosition,
     content: processed.toString(),
   };
 }
