@@ -85,7 +85,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="rounded-xl overflow-hidden shadow-lg bg-white">
             <iframe
               src={`https://www.linkedin.com/embed/feed/update/${post.linkedinUrn}`}
-              height={1400}
+              height={post.linkedinHeight ?? 1400}
               width="100%"
               frameBorder={0}
               allowFullScreen
