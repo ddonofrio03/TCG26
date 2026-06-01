@@ -72,6 +72,7 @@ export default async function BlogPostPage({ params }: Props) {
             alt={post.title}
             fill
             className="object-cover"
+            style={{ objectPosition: post.imagePosition ?? "center" }}
             priority
             sizes="(max-width: 1024px) 100vw, 896px"
           />
