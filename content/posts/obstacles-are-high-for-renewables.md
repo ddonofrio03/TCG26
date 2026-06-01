@@ -5,6 +5,7 @@ excerpt: "A short reflection from LinkedIn on the headwinds facing renewable ene
 category: "Industry Insights"
 author: "The Casey Group"
 image: "/images/davevideo.jpg"
+imagePosition: "top"
 linkedinUrn: "urn:li:ugcPost:7465536512760172544"
 ---
 
