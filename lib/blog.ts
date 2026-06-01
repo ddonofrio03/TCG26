@@ -17,6 +17,7 @@ export interface PostMeta {
   author?: string;
   image?: string;
   imagePosition?: string;
+  linkedinUrn?: string;
 }
 
 export interface Post extends PostMeta {
@@ -53,6 +54,7 @@ export function getPostMeta(slug: string): PostMeta | null {
     author: data.author,
     image: data.image,
     imagePosition: data.imagePosition,
+    linkedinUrn: data.linkedinUrn,
   };
 }
 
@@ -77,6 +79,7 @@ export async function getPost(slug: string): Promise<Post | null> {
     author: data.author,
     image: data.image,
     imagePosition: data.imagePosition,
+    linkedinUrn: data.linkedinUrn,
     content: processed.toString(),
   };
 }

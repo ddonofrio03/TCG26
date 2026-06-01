@@ -79,6 +79,23 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       )}
 
+      {/* LinkedIn Embed */}
+      {post.linkedinUrn && (
+        <div className="container mx-auto px-6 lg:px-12 max-w-3xl pt-12 lg:pt-16">
+          <div className="rounded-xl overflow-hidden shadow-lg bg-white">
+            <iframe
+              src={`https://www.linkedin.com/embed/feed/update/${post.linkedinUrn}`}
+              height={620}
+              width="100%"
+              frameBorder={0}
+              allowFullScreen
+              title="LinkedIn post"
+              className="w-full block"
+            />
+          </div>
+        </div>
+      )}
+
       {/* Article */}
       <article className="container mx-auto px-6 lg:px-12 max-w-3xl py-16 lg:py-24">
         <div
