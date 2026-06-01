@@ -81,11 +81,11 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* LinkedIn Embed */}
       {post.linkedinUrn && (
-        <div className="container mx-auto px-6 lg:px-12 max-w-3xl pt-12 lg:pt-16">
+        <div className="container mx-auto px-6 lg:px-12 max-w-2xl pt-12 lg:pt-16">
           <div className="rounded-xl overflow-hidden shadow-lg bg-white">
             <iframe
               src={`https://www.linkedin.com/embed/feed/update/${post.linkedinUrn}`}
-              height={620}
+              height={1400}
               width="100%"
               frameBorder={0}
               allowFullScreen

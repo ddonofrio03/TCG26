@@ -4,6 +4,7 @@ date: "2026-06-01"
 excerpt: "A short reflection from LinkedIn on the headwinds facing renewable energy projects — and why disciplined community engagement still matters."
 category: "Industry Insights"
 author: "The Casey Group"
+image: "/images/davevideo.jpg"
 linkedinUrn: "urn:li:ugcPost:7465536512760172544"
 ---
 
